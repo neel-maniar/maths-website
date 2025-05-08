@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space between image and heading */
+    margin-bottom: 20px;
+}
+.container {
+    max-width: 800px;   /* Limit total width */
+    margin: 0 auto;     /* Center horizontally */
+    padding: 20px;      /* Optional spacing inside */
+}
