@@ -9,3 +9,14 @@
     margin: 0 auto;     /* Center horizontally */
     padding: 20px;      /* Optional spacing inside */
 }
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure content doesn't overflow */
+html {
+    overflow-x: hidden;
+}
