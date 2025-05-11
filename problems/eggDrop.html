@@ -17,14 +17,20 @@
     <h2>Question</h2>
     <p>You are standing on a \(100\) storey building with \(2\) eggs. These eggs are special: they only break at a certain floor (or higher!). What is the <strong>least</strong> number of drops you need to figure out which floor that is? They may not break on any of the floors!</p>
 
-    <h3>Hint 1</h3>
-    <p>You may reuse an unbroken egg</p>
+    <h3 class="hint-button" onclick="toggleHint('hint1')">Hint 1</h3>
+    <div id="hint1" class="hint">
+        <p>You may reuse an unbroken egg.</p>
+    </div>
 
-    <h3>Hint 2</h3>
-    <p>What if you only had one egg?</p>
+    <h3 class="hint-button" onclick="toggleHint('hint2')">Hint 2</h3>
+    <div id="hint2" class="hint">
+        <p>What if you only had one egg?</p>
+    </div>
 
-    <h3>Hint 3</h3>
-    <p>What if you had infinite eggs?</p>
+    <h3 class="hint-button" onclick="toggleHint('hint3')">Hint 3</h3>
+    <div id="hint3" class="hint">
+        <p>What if you had infinite eggs?</p>
+    </div>
 
     <h2>Follow-up Question</h2>
     <p>Now suppose you have \(k\) eggs and \(n\) floors: how many drops would you need? You may need a computer for this one. Take a guess for how many drops you need if you have a six-pack of eggs and 1 million floors...</p>
@@ -33,5 +39,6 @@
     <p>I first saw it in the <a href="https://books.google.co.uk/books/about/Practical_Guide_to_Quantitative_Finance.html?id=NaWaQQAACAAJ&redir_esc=y">Green book</a>, and then saw the follow-up on <a href="https://leetcode.com/problems/super-egg-drop/description/" target="_blank">
     Leetcode</a>.</p>
     </div>
+    <script src="../script.js"></script>
 </body>
 </html>
