@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Maths Website</title>
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
         <meta name="viewport" content="width=device-width, initial-scale=1.1">
     </head>
     <body class="container">
@@ -11,10 +11,10 @@
         <p>A website for friends to share maths problems with one another</p>
         
         <ul>
-            <li><a href="./problems/eggDrop.html">Egg Drop</a></li>
+            <li><a href="{{ url_for('egg_drop') }}">Egg Drop</a></li>
         </ul>
 
-        <p>Have a better name idea? <a href="misc/suggest.html">Suggest a Name</a></p>
+        <p>Have a better name idea? <a href="{{ url_for('suggest') }}">Suggest a Name</a></p>
 
     </body>
 </html>
