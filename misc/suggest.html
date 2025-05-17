@@ -52,21 +52,23 @@
   </style>
 </head>
 <body>
+<form action="https://formspree.io/f/manovapw" method="POST">
+  <label>
+    Name:
+    <input type="text" name="name" required>
+  </label>
+  <br>
+  <label>
+    Reason:
+    <textarea name="reason" rows="4" cols="40"></textarea>
+  </label>
+  <br>
+  <button type="submit">Send</button>
+  
+  <!-- Optional: redirect to a thank you page after submit -->
+  <!-- <input type="hidden" name="_redirect" value="/thank-you.html"> -->
+</form>
 
-  <form name="suggest-name" method="POST" data-netlify="true">
-    <!-- Required for Netlify Forms to detect the form -->
-    <input type="hidden" name="form-name" value="suggest-name" />
-
-    <h2>Suggest a New Name</h2>
-
-    <label for="name">Name Suggestion</label>
-    <input type="text" id="name" name="name" placeholder="e.g., The Problem Exchange" required />
-
-    <label for="reason">Why this name?</label>
-    <textarea id="reason" name="reason" rows="4" placeholder="Optional explanation..."></textarea>
-
-    <button type="submit">Submit</button>
-  </form>
 
 </body>
 </html>
