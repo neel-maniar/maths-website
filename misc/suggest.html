@@ -53,11 +53,10 @@
 </head>
 <body>
 
-  {% if success %}
-    <p style="text-align:center; color:green;">Thanks for your suggestion!</p>
-  {% endif %}
+  <form name="suggest-name" method="POST" data-netlify="true">
+    <!-- Required for Netlify Forms to detect the form -->
+    <input type="hidden" name="form-name" value="suggest-name" />
 
-  <form method="POST" action="{{ url_for('suggest') }}">
     <h2>Suggest a New Name</h2>
 
     <label for="name">Name Suggestion</label>
